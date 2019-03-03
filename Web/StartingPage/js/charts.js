@@ -1,9 +1,3 @@
-let spendingItems, startDate, endDate, startAmount, endAmount, excelColumns;
-
-
-// functions that modify the spendingItems by the given filters
-
-
 //#region ExcelToJson
 $(function() {
   var oFileIn;
@@ -14,7 +8,7 @@ $(function() {
 });
 //#endregion
 
-//#region FilteringByDate
+//#region FilteringByDate ToDo:: Is in prosses
 
 function dayOfYear(date){
   var now = new Date(date);

@@ -1,3 +1,6 @@
+// functions that modify the spendingItems by the given filters
+
+
 //#region Filtering
 function contentFilters(){
 
