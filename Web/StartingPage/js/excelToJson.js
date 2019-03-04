@@ -1,3 +1,13 @@
+//#region ExcelToJson
+$(function() {
+    var oFileIn;
+    oFileIn = document.getElementById('my_file_input');
+    if(oFileIn.addEventListener) {
+        oFileIn.addEventListener('change', filePicked, false);
+    }
+  });
+  //#endregion
+
 function filePicked(oEvent) {
     // Get The File From The Input
     var oFile = oEvent.target.files[0];

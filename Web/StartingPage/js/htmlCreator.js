@@ -1,5 +1,4 @@
 //#region selections filters innnerHtml
-
 function createHTML(){
     var uniqueValues = [];
     excelColumns = [];
