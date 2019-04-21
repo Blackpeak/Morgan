@@ -18,9 +18,10 @@ function filePicked(oEvent) {
         var data = e.target.result;
         var cfb = XLSX.read(data, {type: 'binary'});
         cfb.SheetNames.forEach(function(sheetName) {
-        spendingItems = XLS.utils.sheet_to_json(cfb.Sheets[sheetName]);   
+        spendingItems = XLS.utils.sheet_to_json(cfb.Sheets[sheetName]);
         console.log(spendingItems);
         createHTML();
+        createStandardGraph();
         });
     };
     // Tell JS To Start Reading The File.. You could delay this if desired
