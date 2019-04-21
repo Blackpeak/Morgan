@@ -1,16 +1,14 @@
 
 //#region FilteringByDate ToDo:: Is in prosses
 function FilterByDay(amountList){
-  var dateAmountArray = []
+  var dateAmountArray = [];
   var fooData = {};
-  //var i = 0;
     amountList.forEach(element => {
       if(fooData['date'] != element.date){ //if is the first cost of the day
-        //dateAmountArray[i] = fooData;
+        //dateAmountArray.push(fooData);
         console.log(fooData);
         fooData['date'] = element.date;
         fooData['amount'] = parseFloat(element.amount);
-        //i++;
       }else{
         fooData['amount'] += parseFloat(element.amount);
       }
