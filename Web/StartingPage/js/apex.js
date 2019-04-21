@@ -46,10 +46,10 @@ function createStandardGraph(){
     },
     series: [{
       name: 'Amount of cost',
-      data: generateDayWiseTimeSeries(0, 18)
+      data: generateDayWiseTimeSeries(0, 500)
     }, {
       name: 'Paid by cash',
-      data: generateDayWiseTimeSeries(1, 18)
+      data: generateDayWiseTimeSeries(1, 500)
     }],
     markers: {
       size: 0,
