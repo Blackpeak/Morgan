@@ -1,21 +1,5 @@
 
 //#region FilteringByDate ToDo:: Is in prosses
-function FilterByDay(amountList){
-  var dateAmountArray = [];
-  var fooData = {};
-    amountList.forEach(element => {
-      if(fooData['date'] != element.date){ //if is the first cost of the day
-        //dateAmountArray.push(fooData);
-        console.log(fooData);
-        fooData['date'] = element.date;
-        fooData['amount'] = parseFloat(element.amount);
-      }else{
-        fooData['amount'] += parseFloat(element.amount);
-      }
-    });
-    //console.log(dateAmountArray);
-    return fooData;
-}
 
 function dayOfYear(date){
     var now = new Date(date);
@@ -28,7 +12,7 @@ function dayOfYear(date){
   
   function FiterByMonth(amountList){
     var fooData = {};
-    amountList.forEach(element => {
+    amountList.forEach(function(element){
       console.log(dayOfYear(`${element.date}`));
       var dateArray = element.date.split('/');
       if(fooData[`${dateArray[0]}`] === undefined){ //if is the first amount of the month

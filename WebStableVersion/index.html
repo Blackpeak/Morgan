@@ -70,6 +70,7 @@
     </br>
       <div id="columnFilters"></div>
       <button onclick="columnFilters()">Show Column Chart</button>
+    </div>
   </br>
 </br>
 </br>
@@ -82,27 +83,26 @@
     <div id="totalCost"></div>
     <div role="main" class="main">
       <a href="#nav" class="nav-toggle">Menu</a>
-        <!-- <div id="chartContainer" style="display: block; height: 100%; width: 100%;">
+        <div id="chartContainer" style="display: block; height: 100%; width: 100%;">
           <canvas id="canvas" class="canvasjs-chart-canvas" style="position: inherit"></canvas>
-        </div> -->
+        </div> <!--This is the old good traditional way-->
 
-        <div id="chart">
+        <!-- <div id="chart">
           <div id="timeline-chart"></div>
-        </div>
+        </div> This is the new version of DataDisplay in M.Organ -->
 
     </div>
     <script>
       var navigation = responsiveNav("foo", {customToggle: ".nav-toggle"});
     </script>
-    <script type="text/javascript" src="StartingPage/js/pending.js"></script> <!--ORIGINAL-->
-    <script type="text/javascript" src="StartingPage/js/apex.js"></script> <!--ORIGINAL-->
-    <script type="text/javascript" src="StartingPage/js/excelToJson.js"></script> <!--ORIGINAL-->
     <script type="text/javascript" src="StartingPage/js/filtering.js"></script> <!--ORIGINAL-->
     <script type="text/javascript" src="StartingPage/js/htmlCreator.js"></script> <!--ORIGINAL-->
     <script type="text/javascript" src="StartingPage/js/displayCharts.js"></script> <!--ORIGINAL-->
+    <script type="text/javascript" src="StartingPage/js/excelToJson.js"></script> <!--ORIGINAL-->
     <script type="text/javascript" src="StartingPage/js/dataCalculation.js"></script> <!--ORIGINAL-->
     <script type="text/javascript" src="StartingPage/js/slider.js"></script> <!--ORIGINAL-->
     <script type="text/javascript" src="StartingPage/js/calendar.js"></script> <!--ORIGINAL-->
     <script type="text/javascript" src="StartingPage/js/contentFilters.js"></script> <!--ORIGINAL-->
+    <script type="text/javascript" src="StartingPage/js/apex.js"></script> <!--ORIGINAL-->
   </body>
 </html>
