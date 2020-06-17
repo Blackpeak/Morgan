@@ -61,12 +61,9 @@ Upload
 Watch and play
 ```
 
-## Developers
+## Developer
 
-<b>Backend</b>
-- [Dimitris Filippou](https://jimfilippou.space)
-
-<b>Frontend</b>
+<b>Frontend / Backend</b>
 - [Manos Stamatakis](https://manosthemaster.github.io/)
 
 
